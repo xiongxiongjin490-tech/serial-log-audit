@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "serial-log-audit"
+version = "0.1.0"
+description = "Auditable time-series log validation and statistics for embedded controller captures"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+serial-log-audit = "serial_log_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["serial_log_audit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

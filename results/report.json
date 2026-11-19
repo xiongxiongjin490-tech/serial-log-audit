@@ -1,0 +1,79 @@
+{
+  "tool": "serial-log-audit",
+  "version": "0.1.0",
+  "data_kind": "synthetic-demo",
+  "source": "fixed-seed artificial capture",
+  "python": "3.13.18",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "limits": {
+    "temperature": {
+      "min": -10.0,
+      "max": 85.0,
+      "period_s": 1.0
+    },
+    "current": {
+      "min": 0.0,
+      "max": 5.0,
+      "period_s": 0.5
+    }
+  },
+  "report": {
+    "total_samples": 99,
+    "channel_count": 2,
+    "channels": [
+      {
+        "channel": "current",
+        "samples": 40,
+        "first_timestamp": 0.0,
+        "last_timestamp": 19.5,
+        "duration_s": 19.5,
+        "mean": 1.1278,
+        "median": 1.155,
+        "min": -0.6,
+        "max": 1.413,
+        "stdev": 0.29094604310765254,
+        "out_of_range": 1,
+        "sampling_gaps": 0,
+        "dense_bursts": 0
+      },
+      {
+        "channel": "temperature",
+        "samples": 59,
+        "first_timestamp": 0.0,
+        "last_timestamp": 59.0,
+        "duration_s": 59.0,
+        "mean": 26.063728813559322,
+        "median": 24.98,
+        "min": 22.746,
+        "max": 91.4,
+        "stdev": 8.67672594542933,
+        "out_of_range": 1,
+        "sampling_gaps": 1,
+        "dense_bursts": 0
+      }
+    ],
+    "anomalies": [
+      {
+        "timestamp": 10.0,
+        "channel": "current",
+        "kind": "out_of_range",
+        "detail": "below_min",
+        "value": -0.6
+      },
+      {
+        "timestamp": 31.0,
+        "channel": "temperature",
+        "kind": "sampling_gap",
+        "detail": "interval 2.000s after 29.000s",
+        "value": null
+      },
+      {
+        "timestamp": 45.0,
+        "channel": "temperature",
+        "kind": "out_of_range",
+        "detail": "above_max",
+        "value": 91.4
+      }
+    ]
+  }
+}

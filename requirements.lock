@@ -1,0 +1,4 @@
+# Runtime: Python standard library only.
+# Development / CI dependencies pinned for reproducible local runs.
+setuptools>=68
+pytest==8.3.4

@@ -1,0 +1,4 @@
+timestamp,channel,kind,detail,value
+10.0,current,out_of_range,below_min,-0.6
+31.0,temperature,sampling_gap,interval 2.000s after 29.000s,
+45.0,temperature,out_of_range,above_max,91.4
