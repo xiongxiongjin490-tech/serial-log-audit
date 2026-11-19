@@ -1,6 +1,6 @@
 # Serial Log Audit · 嵌入式时序日志质检台
 
-[English](README.en.md) · [来源说明](SOURCES.md) · [AI 辅助说明](AI_USE.md)
+[English](README.en.md) · [来源说明](SOURCES.md)
 
 把控制器 / 串口导出的时序 CSV 变成可审查的质检报告：先拒绝重复帧、乱序时间戳和非有限数值，再按通道做描述统计、越界识别与采样间隔异常检测。项目独立编写，不包含任何固件、驱动、通信协议或硬件模型。
 

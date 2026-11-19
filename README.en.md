@@ -1,6 +1,6 @@
 # Serial Log Audit · Embedded time-series log audit
 
-[中文](README.md) · [Sources](SOURCES.md) · [AI disclosure](AI_USE.md)
+[中文](README.md) · [Sources](SOURCES.md)
 
 Turn controller / serial-exported time-series CSV into an auditable quality report:
 duplicate frames, out-of-order timestamps and non-finite numbers are rejected first,
